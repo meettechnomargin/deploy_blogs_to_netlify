@@ -14,7 +14,7 @@ import api from "/api/posts";
 import useWindowSize from "./hooks/useWindowSize";
 
 function App() {
-  const API_URL = "http://localhost:2006/posts";
+  // const API_URL = "http://localhost:2006/posts";
   const [posts, setPosts] = useState([]);
   const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
@@ -87,7 +87,7 @@ function App() {
 
   const addPost = async (e) => {
     e.preventDefault();
-    const id = posts.length ? (Number(posts[posts.length - 1].id) + 1).toString() : 1;
+    const id = posts.length ? (Number(posts[posts.length - 1].id) + 1).toString() : "1";
     const date = format(new Date(), "MMMM dd, yyyy pp");
     const newPost = {id, title: postTitle, datetime: date, body: postBody}; 
     try{
