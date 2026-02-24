@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-    baseURL: "https://ephemeral-fudge-56d8aa.netlify.app/"
+    baseURL: "https://my-json-server.typicode.com/meettechnomargin/deploy_blogs_to_netlify"
 })
